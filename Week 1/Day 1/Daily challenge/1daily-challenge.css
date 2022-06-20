@@ -1,0 +1,52 @@
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding:8px;
+  text-decoration: none;
+  spadding: 14px 16px;
+  }
+
+a { 
+color: white;
+ }
+
+ body {
+  background-image: url("168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg");
+  background-size: cover;
+}
+
+h1
+{
+font-size: 50px;
+font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 500px;
+  height: 200px;
+  }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}

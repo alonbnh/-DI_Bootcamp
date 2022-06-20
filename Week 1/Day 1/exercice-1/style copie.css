@@ -1,0 +1,23 @@
+body { 
+background-color: beige;
+
+}
+.center { 
+float: center;
+ margin:0 10px 0 20pxs
+}
+.cara { 
+
+border:red solid;
+width: 100%;
+color: red;
+text-align: center;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+img {
+float: center;
+}
