@@ -1,0 +1,43 @@
+# f = open('secrets.txt','a+')
+# f.write('\nThis is text being appended to test.txt')
+# f.write('\nAnd another line here.')
+# f.close()
+
+
+# with open('output.txt', 'w') as f:
+#     for i in range(45):
+#        f.write("this is line: %i\n"%i)
+
+import json
+
+family = {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "hobbies": ["running", "sky diving", "singing"],
+    "age": 35,
+    "children": [
+        {
+            "firstName": "Alice",
+            "age": 6
+        },
+        {
+            "firstName": "Bob",
+            "age": 8
+        }
+    ]
+}
+
+json_file = "file.json"
+
+# with open(json_file, 'w') as file_obj:
+#     json.dump(family["children"], file_obj, indent = 2, sort_keys=True)
+
+for child in family["children"]:
+    child['favorite color'] = "yellow"
+
+
+print(family["children"])
+with open(json_file, 'w') as file_obj:
+    json.dump(family["children"], file_obj, indent = 2, sort_keys=True)
+
+# json.dump(family["children"],json_file)
